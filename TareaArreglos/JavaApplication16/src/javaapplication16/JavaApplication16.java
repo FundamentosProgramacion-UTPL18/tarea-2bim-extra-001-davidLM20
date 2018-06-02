@@ -39,19 +39,22 @@ public class JavaApplication16 {
             esto debido a que el ejercicio no dice si se debe sacar un pormedio o solo presentar las ventas totales
             */
             suma_total = suma + suma_total;
-            //suma de todos los totales 
+            
         }
         // segundo ciclo for es para presentar los encabezados
         for (String mese : meses) {
             System.out.printf("\t\t%s", mese);
         }
-
+        
         System.out.printf("\t%s\t\t%s\n", "Total", "Promedio");
         System.out.println("");
+        
+        // tercer ciclo for es para la presentacion de los valores previamente establecidos y los nuevos resultados 
         for (int i = 0; i < venta_promedio_sucursal.length; i++) {
             System.out.printf("%s\t%.1f\t\t%.1f\t\t%.1f\t\t%.1f\t\t%.1f\n", sucursales[i], ventas_mes1[i], ventas_mes2[i], ventas_mes3[i], venta_total_sucursal[i], venta_promedio_sucursal[i]);
 
         }
+        // estos print son para  presntar la suma final de los totales de las ventas
         System.out.println("");
         System.out.printf("Totales de ventas de todas la sucursales es: %.1f\n", suma_total);
 
